@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE version SYSTEM "../../../lib/pkp/dtd/pluginVersion.dtd">
+
+<!--
+/**
+ * @file plugins/generic/addCitation/version.xml
+ *
+ * Copyright (c) 2021 Universitätsbibliothek Freie Universität Berlin
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ */
+  -->
+<version>
+	<application>addCitation</application>
+	<type>plugins.generic</type>
+	<release>1.0.0.0</release>
+	<date>2024-04-02</date>
+	<lazy-load>1</lazy-load>
+	<sitewide>0</sitewide>
+	<class>AddCitationPlugin</class>
+</version>

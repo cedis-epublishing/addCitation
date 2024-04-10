@@ -1,0 +1,40 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-07-02T13:34:36+00:00\n"
+"PO-Revision-Date: 2021-07-02T13:34:36+00:00\n"
+"Language: \n"
+
+msgid "plugins.generic.addCitation.displayName"
+msgstr "Add Citations"
+
+msgid "plugins.generic.addCitation.description"
+msgstr "Add custom citations to be displayed on the article page."
+
+msgid "plugins.generic.addCitation.tabTitle"
+msgstr "Custom Citations"
+
+msgid "plugins.generic.addCitation.management.gridTitle"
+msgstr "Custom citations"
+
+msgid "plugins.generic.addCitation.addCitationTitle"
+msgstr "Citations to be display on the article page"
+
+msgid "plugins.generic.addCitation.itemStyle"
+msgstr "Citation Style"
+
+msgid "plugins.generic.addCitation.itemCitation"
+msgstr "Citation"
+
+msgid "plugins.generic.addCitation.noneCreated"
+msgstr "No citations yet."
+
+msgid "plugins.generic.addCitation.addCitation"
+msgstr "Add citation"
+
