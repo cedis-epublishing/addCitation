@@ -1,7 +1,7 @@
 {**
  * plugins/generic/addCitation/templates/editAddCitationForm.tpl
  *
- * Copyright (c) 2021 Universitätsbibliothek Freie Universität Berlin
+ * Copyright (c) 2024 Universitätsbibliothek Freie Universität Berlin
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * Form for editing a citation item

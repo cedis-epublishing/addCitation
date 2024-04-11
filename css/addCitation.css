@@ -1,3 +1,7 @@
 .addCitation p {
 	margin-top:0 !important;
 }
+
+.addCitation span, .addCitation div, .addCitation p {
+	font-size: 11px !important;
+}

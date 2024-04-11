@@ -2,7 +2,7 @@
 /**
  * @file plugins/generic/addCitation/AddCitationPlugin.inc.php
  *
- * Copyright (c) 2021 Universitätsbibliothek Freie Universität Berlin
+ * Copyright (c) 2024 Universitätsbibliothek Freie Universität Berlin
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  */
 
@@ -38,16 +38,6 @@ class AddCitationPlugin extends GenericPlugin {
 		return false;
 	}
 	
-	public function _overridePluginTemplates($hookName, $args){
-
-		if ($args[0]=="templates/frontend/objects/article_details.tpl") {
-			$request = $args[0];
-			$templateMgr = TemplateManager::getManager($request);
-			$templateMgr->display($this->getTemplateResource('article_details.tpl'));
-		}
-		return false;
-	}
-	
 	/**
 	 * Retrieve citation information for the article details template. This
 	 * method is hooked in before a template displays.
@@ -70,16 +60,19 @@ class AddCitationPlugin extends GenericPlugin {
 		$output = "";
 		if ($citationsAll) {
 			foreach($citationsAll as $citation) {
+				$output .= '<div class="addCitationItem">';
 				if ($citation['style']) {
 					$output .= "<span>".$citation['style'].":</span>";
 				}
-				$output .= $citation['citation'];			
+				$output .= $citation['citation'].'</div>';			
 			}			
 		}
 
-		$templateMgr->assign(array(
-			'addCitation' => '<div style="font-size: 11px">'.$output."</div>"
-		));
+		if ($output) {
+			$templateMgr->assign(array(
+				'addCitation' => '<div>'.$output."</div>"
+			));			
+		}
 		
 		import('classes.file.PublicFileManager');
 		$publicFileManager = new PublicFileManager();
